@@ -7,3 +7,4 @@ function FancyArray() {
 }
 
 FancyArray();
+console.log(idx);
