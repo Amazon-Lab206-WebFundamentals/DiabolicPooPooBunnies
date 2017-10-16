@@ -1,0 +1,140 @@
+*{
+    font-family: sans-serif;
+}
+.wrapper{
+
+    width: 900 px;
+    height: 1200px;
+}
+.Internet {
+  
+    width: 150px;
+}
+
+.bluetext {
+    color: rgb(75, 134, 224);
+}
+.blueboldtitle {
+    color:darkblue;
+}
+italybold {
+    text-decoration: bold;
+}
+.www {
+    background-color: blue;
+    color: white;
+
+}
+
+.bluebutton {
+    width: 150px; 
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+}
+
+.orangebutton {
+    width: 150px; 
+    display: inline-block;
+    text-align: center;
+    background-color: orange;
+}
+
+.BIGmaindiv{
+    display: inline-block;
+    width: 720px;
+}
+
+.DNS {
+    display: inline-block;
+    vertical-align: top;
+    margin-top:5px;
+}
+
+.BIGmaindiv img {
+    width: 10px;
+    height: auto;
+}
+
+.phonenumbers{
+display: inline-block;
+margin-left: 430px;
+}
+.numbers {
+font-size: 20px;
+color: skyblue;
+}
+.international {
+    text-align: center;
+    font-size: 9px;
+}
+
+.clientsandserver{
+width: 720px;
+}
+.clientsandserver img{
+margin: auto;
+display: flex;
+width: 270px;
+}
+
+.globe {
+    width: 80px;
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.InternetNinja {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Ninja {
+    background-color: rgb(15, 15, 250);
+    width: 150px;
+    margin: auto;
+}
+
+.Ninja h3 {
+    color: white;
+    text-align: center;
+}
+.Ninja p {
+    color:white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: cyan;
+    display: flex;
+}
+
+.Ninja img {
+    width: 120px;
+    margin: auto;
+    display: block;
+
+
+}
+
+.colorfulcircles {
+width: 90px;
+display: inline-block;
+}
+
+.big3 {
+    display: inline-block;
+    width: 615px;
+}
+
+.theblueborderboxy {
+   display: inline-block;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    border-left: 5px solid;
+    border-color: blue;
+
+
+}

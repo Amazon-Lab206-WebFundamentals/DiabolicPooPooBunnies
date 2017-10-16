@@ -1,0 +1,138 @@
+#wrapper {
+    background-color: rgb(34, 86, 145);
+    width: 1200px;
+    text-align: center;
+}
+
+.profilepicture {
+    display: inline-block;
+    margin-left: -250px;
+    width: 1050px;
+}
+
+.headerright {
+    display: inline-block;
+}
+
+.yellow {
+    display: inline;
+    color: darkkhaki;
+    text-decoration: underline;
+}
+
+input { 
+    text-align: center; 
+}
+
+.searchborder {
+    background-color: darkslategrey;
+    border: solid;
+    border-color: darkslategrey;
+    border-width: 15px 20px 15px 20px;
+}
+
+.search {
+  
+    padding:10px;
+}
+
+.go {
+    border-radius: 5px;
+    background-color: #2b5b84;
+    padding: 5px 10px 5px 10px;
+}
+.topmenu {
+    display: block;
+    background-color: rgb(70, 157, 228);
+    color: white;
+    margin:auto;
+    width:85%;
+    border-radius: 5px;
+}
+
+.topmenu ul li {
+    display: inline-block;
+    font-size: 115%;
+    padding: 15px 40px 15px 40px;
+
+}
+.bulletpoints{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    width: 230px;
+    height: 250px;
+    font-family: sans-serif;
+    vertical-align: top;
+}
+
+.bulletpoints ul li{
+    line-height: 175%;
+}
+
+.paragraphyellowsuperdiv{
+    display: inline-block;
+ 
+
+}
+.mainparagraph{
+    display: inline-block;
+    color: white;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+.beautifulugly{
+    color:yellow;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.zen {
+    color: white;
+    font-family: sans-serif
+}
+.block {
+    display: block;
+}
+.whitenesseverdeen {
+    background-color: white;
+}
+.whitecolumns {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    border-top-style: solid;
+    border-top-color: blue;
+    margin: 15px;
+}
+
+.blueletters {
+    display: inline;
+    color: lightskyblue;
+}
+
+.whitecolumns ul li {
+    color: lightskyblue;
+}
+
+#footer {
+    color:skyblue;
+}
+#footer ul li {
+    display: inline-block;
+    font-size: 115%;
+    padding: 15px 15px 0px 15px;
+}
+
+#footer p {
+    font-size: 70%;
+}
+
+

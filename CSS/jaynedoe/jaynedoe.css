@@ -1,0 +1,85 @@
+html {
+    background-color: rgb(79, 22, 107);
+    width: 1100px;
+}
+.header {
+    font-family: sans-serif;
+    background-color: lightslategrey;
+    margin-bottom: 15px;
+    width:937px;
+}
+.headerleft {
+    display: inline-block;
+}
+
+.headerright {
+    float:right;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.profilepicture {
+    padding-left: 8px;
+    display:inline-block;
+}
+.profilepicture img {
+    display:inline-block;
+    width:450px;
+}
+
+.about {
+    margin-left: 25px;
+    vertical-align: top;
+    display:inline-block;
+    width:450px;
+    height:296px;
+    background-color: rgb(239, 228, 241);
+}
+
+.underlining {
+    text-decoration: underline;
+}
+
+.column {
+    display:inline-block;
+    width: 298px;
+    padding: 6px;
+    background-color: rgb(239, 228, 241);
+}
+
+.columnimage img {
+    width:300px;
+}
+.columnheader {
+    font-family: arial;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
+    color:white;
+}
+
+.columntext {
+    text-align: justify;
+    padding: 20px;
+    height:170px;
+}
+
+.columntechtext {
+    background-color: grey;
+    color:white;
+    padding-left:5px;
+}
+.columntech img {
+    width: 50px;
+    padding: 3px;
+}
+
+.columnfooter {
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    width:max-content;
+    margin: auto;
+    padding: 5px 3px 5px 3px;
+    color: white;
+}
