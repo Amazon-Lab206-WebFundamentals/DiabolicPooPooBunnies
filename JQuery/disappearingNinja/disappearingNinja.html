@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="disappearingNinja.css">
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <title>Disappearing Ninja</title>
+</head>
+
+<body>
+    <h1>Disappearing Ninja</h1>
+    <div class="wrapper">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+        <img src="ninjabunny.jpg" alt="ninjabunny">
+    </div>
+    <script>$('img').click(function () {
+            $hide(); ("This ninja bunny is gone now, bunny hides!"));
+        });</script>
+    <button>Bring the bunny back!</button>
+    <script>$('button').click(function () {
+            .show('img');
+        });</script>
+</body>
+
+
+</html>

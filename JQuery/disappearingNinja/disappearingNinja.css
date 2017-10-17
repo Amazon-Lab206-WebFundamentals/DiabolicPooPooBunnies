@@ -1,0 +1,10 @@
+.wrapper{
+    width: 600px;
+    background-color:pink;
+    padding-left:40px;
+    vertical-align: top;
+}
+.wrapper img{
+    width:120px;
+    margin-right: 20px;
+}
