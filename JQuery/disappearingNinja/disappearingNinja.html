@@ -7,7 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="disappearingNinja.css">
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
 
+        $(document).ready(function () {
+            $('img').click(function () {
+                $(this).hide();
+            });
+
+            $('button').click(function () {
+                $('img').show();
+            });
+        });
+
+    </script>>
     <title>Disappearing Ninja</title>
 </head>
 
@@ -26,16 +38,6 @@
 
     <button id="bringherback">Bring the bunny back!</button>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.img').click(function () {
-                $(this).fadeOut();
-            });
-            $(.button).click(function () {
-                $('img').fadeIn();
-            });
-        });
 
-    </script>>
 
 </html>
