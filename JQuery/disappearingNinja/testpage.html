@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <title>Bunny's test page</title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#hide').click(function () {
+                $('h2').hide();
+            });
+            $('#show').click(function () {
+                $('h2').show();
+            });
+            $('h3').hover(function () {
+                $(this).fadeOut();
+            });
+            $('h1').hover(function () {
+                $('h2').toggle();
+            });
+            $('h2').click(function () {
+                $('img').slideDown(); /*not functioning, why?*/
+            });
+            $('h2').click(function () {
+                $('img').slideUp();/*not working, why?*/
+            });
+            $('img').click(function () {
+                $('img').slideToggle(); /*holy crud! My bunny is a ninja!!:D Thats magical*/
+            });
+            $('#bringherback').click(function () {
+                $('img').fadeIn();
+            });
+            $('p').click(function () {
+                $('h2:first').addClass(first class);/*huh? I don't get this one. Looked it up, doesn't help*/
+            });
+            $('p').click(function () {
+                $('h2:second').before(first class);
+            });
+            $('p').click(function () {
+                $('h2:second').after(first class);
+            });
+            $('#append').click(function () {
+                $(this).append("List all the things about bunnies, they're awesome!")
+
+            });
+
+
+        });
+    </script>
+</head>
+
+
+<body>
+    <h1>Fun Facts about Bunnies (I DARE you to click on me)</h1>
+    <h2>They are born blind and furless</h2>
+    <h3>Fun fact, hares are born with vision and fur. Hover, and you'll see what a baby bunny sees</h3>
+    <h2>They can not pass gas, the gas piles up in their GI system causing them great discomfort and pain</h2>
+    <h2>They give birth in litters of 3 or 4</h2>
+    <h2>Their gestation period is roughly a month</h2>
+    <h2>Their teeth continuously grow, so they must chew on unfinished wood, pinecones etc to trim them, otherwise it may lead
+        to dental problems</h2>
+    <h3>Chew all the wires!Hover over me</h3>
+    <p>You are probably wondering why you're reading this, its because you're curious or obsessed about rabbits. Deal with it,
+        they are awesome</p>
+    <button id="hide">Hide all facts</button>
+    <button id="show">Display all facts</button>
+    <button id="append">List more things!</button>
+    <button id="bringherback">Bring the bunny back!</button>
+    <img src="ninjabunny.jpg" alt="Ninja Bunny">
+
+
+</body>
+
+</html>
