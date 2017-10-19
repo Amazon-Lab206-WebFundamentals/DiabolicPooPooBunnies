@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('button').click(function () {
+            $('table').append('<tr><td>' + $(input[name = "first_name"]).val() + '</td><td>'
+                + $(input[name = "last_name"]).val() + '</td><td>'
+                + $(input[name = "email"]).val() + '</td><td>'
+                + $(input[name = "phone_numbere"]).val() + '</td><td>');
+            return false;
+        })
+
+    });
+</script>
+
+<body>
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>First Name</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cadence</td>
+                <td>Chawesome</td>
+                <td>ccadenc@happybunnies.com</td>
+                <td>888-280-4331</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <h1>Add User</h1>
+        <p>First Name:
+            <input type="text" class="textbox" placeholder="First Name" name="textbox">
+        </p>
+        <p>Last Name:
+            <input type="text" class="textbox" placeholder="Last Name" name="textbox">
+        </p>
+        <p>Email Address:
+            <input type="text" class="textbox" placeholder="Email Address" name="textbox">
+        </p>
+        <p>Contact No:
+            <input type="text" class="textbox" placeholder="Phone number" name="Textbox">
+        </p>
+        <button>Add User</button>
+    </form>
+
+
+</body>
+
+</html>

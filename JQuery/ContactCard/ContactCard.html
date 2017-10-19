@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+    </script>
+    <title>Contact Card</title>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('button').click(function () {
+                $('table').append('<tr><td>' + $('input[name="first_name"]').val() + '</td><td>'
+                    + $('input[name="last_name"]').val() + '</td><td>'
+                    + $('input[name="description"]').val() + '</td><td>'
+               
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <table id="navbar">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email Address</td>
+                <td>Contact #</td>
+            </tr>
+        </table>
+        <h1>Add User</h1>
+        <form>
+            <label>First Name: </label>
+            <input type="text" placeholder="First Name" name="first_name">
+            <label>Last Name: </label>
+            <input type="text" placeholder="Last Name" name="last_name">
+            <label>Description</label>
+            <input type="textbox" placeholder="Description" name="description">
+
+        </form>
+        <button>Add User</button>
+    </div>
+
+</body>
+
+<style type="text/css">
+    table {
+        border: 1px solid black;
+        width: 20%;
+    }
+
+    td {
+        margin-right: 20px;
+    }
+
+    h1 {
+        border-bottom: 3px solid black;
+        width: 30%;
+    }
+
+    form {
+        width: 24%;
+        margin-left: 100px;
+    }
+
+    input {
+        display: inline-block;
+        width: 200px;
+        margin-right: 15px;
+    }
+</style>
+
+
+</html>
