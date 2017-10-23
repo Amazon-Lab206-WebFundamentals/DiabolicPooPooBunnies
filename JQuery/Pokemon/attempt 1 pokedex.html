@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+    </script>
+    <title>Pokemon images</title>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $('form').submit(function (event)){
+                event.preventDefault();
+                for (var i = 0; i < 151; i++) {
+                    var url = "<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/";
+                    url += i;
+                    url += ".png'>";
+                    $.get(url), function (pokemon) {
+                        console.log(pokemon.sprites.front_default);
+                        $('body).sppend(' < img src= "'+pokemon.sprites.front_default+'"</img >)
+                        console.log(url);
+                    };
+                });
+            });
+
+    </script>
+</head>
+
+<body>
+    <h1>Pokemon, Gotta catch 'em all!</h1>
+    <form>
+    </form>
+
+
+</body>
+
+</html>

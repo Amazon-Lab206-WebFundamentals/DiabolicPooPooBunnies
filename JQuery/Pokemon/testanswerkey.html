@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>The Codingdojo ColorClicker!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('form').submit(function (event) {
+                event.preventDefault();
+                for (var i = 1; i < 10; i++) {
+                    $.get('https://pokeapi.co/api/v2/pokemon/' + i + '/', function (pokemon) {
+                        console.log(pokemon.sprites.front_default);
+                        $('body').append('<img src="' + pokemon.sprites.front_default + '"</img>');
+                    }, 'json');
+                };
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <button type='submit' value='oofda'>oofda</button>
+    </form>
+    <div id="box">
+    </div>
+</body>
+
+</html>

@@ -13,12 +13,17 @@
 
         $(document).ready(function () {
 
+
             $('button').click(function () {
-                $('table').append('<tr><td>' + $('input[name="first_name"]').val() + '</td><td>'
-                    + $('input[name="last_name"]').val() + '</td><td>'
-                    + $('input[name="description"]').val() + '</td><td>'
-               
+                var html_str = '<tr><td>'
+                    + $('input[name="first_name"]').val()
+                    + '<td><td>'
+                    + $('input[name="last_name"]').val() + '<td><td>'
+                    + $('input[name="description"]').val() + '<td><td>';
+                $('table').append(html_str)
+
                 return false;
+
             });
         });
 

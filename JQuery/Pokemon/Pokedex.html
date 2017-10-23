@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+    </script>
+    <title>Pokedex</title>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            for (var i = 1; i < 10; i++) {
+                var url = "<img id='" + i + "' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/";
+                url += i;
+                url += ".png'>";
+                $('body').append(url);
+                console.log(url);
+            };
+        });
+
+        $('img').on('click', function () {// What does this function (e) do? -- event. don't need with return false. Must click on img
+            $.get("https://pokeapi.co/api/v2/", _poke_id, function (pokemon) {// pokemon id to talk to api
+                console.log(pokemon)// makes me see what data is available to me and helps me access sprites.
+                console.log(pokemon.sprites.front_default);//What is going on here?-- just one img. must console.log pokemon (object) more keys inside object.
+                var html_stri = "<ul>"// must be ul and li instead of tr and td.
+                html_stri += "<li>" + pokemon.id + "</li>";
+                html_stri += "<li>" + pokemon.name + "</li>";//where am I pulling all this info from? How does computer know what pokemon.name is?
+                html_str += "<li>" + pokemon.hieght + "</li>";
+                html += "<li>" + pokemon.weight + "</li";
+                html += "<li><img src='" + pokemon.sprites.front_default + "'></li>";
+                html_str += "</ul>";
+                $('tbody').append(html_stri);
+
+            }, "json");
+
+            $('#pokegym').on('click', 'img', function () {//can't be $img. it'd have to be a step up: pokegym.
+                var poke_id = ($(this).attr("id"));//inferference to img
+                var poek url= "https://pokeapi.co/api/v2/pokemon/" + poke_id;
+                //take url and reach out to the pokeapi
+                $.get(poke_url, function (response) {
+                    console.log(response);
+
+                    var html_str =:"<h1>"+ response.name + "</h1>";//replace html inside pokeinfo div using .html()
+
+                }, 'json');//contains object according to poeapi.co//callback function.// must provide landing spot for it. PARAMETER to capsure reponse.
+
+                /*The info only populates after the page loads, and the imgs are clicked*/
+            });
+
+            return false; //no functions after this line will run.
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>All the pokemons, click on them to learn more.</h1>
+    <div id="pokegym">
+
+    </div>
+    <div id="pokeinfo"></div>
+    <!-- <table> make sure i insert images and not table for this assignment -->
+    <!--
+    <form>
+        <ul>
+            <li>pokemonID</li>
+            <li>Name</li>
+            <li>type</li>
+            <li>height</li>
+            <li>weight</li>
+            <li>image</li>
+        </ul>
+
+</body>
+
+</html>
