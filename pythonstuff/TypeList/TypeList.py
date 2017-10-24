@@ -27,13 +27,13 @@ testlist = sum = 0
 phrase = ""
 listtype = None
 
-for val in ml:
+for val in il:
     if(type(val)is int):
         sum += val
         if(listtype is str):
             listtype = "mixed"
-            elif(listtype is None):
-                listtype = "integer"
+        elif(listtype is None):
+            listtype = "integer"
     else:
         phrase += val
         if (listtype is int):
